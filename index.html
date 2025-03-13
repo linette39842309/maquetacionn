@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background: #575557;
+            color: #FFF;
+            font-family: 'Dancing Script', cursive;
+        }
+        #contenedor {
+            width: 960px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            overflow: hidden;  
+        }
+        header {
+            height: 150px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            gap: 20px;
+        }
+        header h1 {
+            font-size: 50px;
+            text-align: center;
+            line-height: 150px;
+            flex-grow: 1;
+        }
+        nav .menu{
+            list-style: none;
+            padding: 0;
+            background: #092327;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+        }
+        .menu li{
+            display: inline-block;
+            text-align: center;
+        }
+        .menu li a:hover{
+            background: #d53ce7 ;
+        }
+        #contenido {
+            width: 700px;
+            height: 500px;
+            float: left;
+            background: #eecaf3;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        #contenido p {
+            font-size: 28px;
+            height: 100px;
+            padding: 10px;
+        }
+        .slider {
+    position: relative;
+    width: 100%;
+    max-width: 960;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+        aside {
+            width: 250px;
+            height: 500px;
+            background: #f7e0f9;
+            margin-top: 10px;
+            float: right;
+        }
+        img {
+        transition: transform 0.3s ease;
+        }
+        img:hover {
+        transform: scale(1.1);
+        }
+        footer {
+        background: #000;
+        clear: both;     
+        text-align: center;
+        padding: 20px;
+        }
+
+        .whatsapp-icon {
+         display: block;
+         margin: 10px auto 0;
+         width: fit-content;
+        }
+        footer h2 {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Mercedes-benz</h1>
+        </header>  
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="modelos.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    <div class="slider">
+        <div class="slider-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAxTjfT6Q8RnBzL1-eg_IrWjbBz9FP4_WJmw&s" alt="Imagen 1">
+        <img src="https://1s-photomanager-prd.autotradercdn.ca/photos/stock/2025/e55f1eb0-2e83-4103-9ad5-488f24e80443.jpg" alt="Imagen 2">
+        <img src="https://img.sm360.ca/images/article/humberviewgroup-941/114236//410908_2021_mercedes-benz_gle-class1684437019338.jpg" alt="Imagen 3">
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moverSlide(1)">&#10095;</button>
+    </div>
+       <section id="contenido">
+            <article>
+                <p>Mercedes-Benz es una de las marcas automotrices más prestigiosas del mundo, con una historia que se remonta a 1886, cuando Karl Benz creó el primer automóvil de la historia, el Benz Patent-Motorwagen. Paralelamente, Gottlieb Daimler y Wilhelm Maybach desarrollaban sus propios vehículos motorizados, sentando las bases de la industria automotriz.
+
+                En 1926, las compañías de Benz y Daimler se fusionaron, dando origen a Mercedes-Benz, un nombre que se convirtió en sinónimo de innovación, lujo y rendimiento. Desde entonces, la marca ha liderado la evolución del automóvil con modelos icónicos como el Mercedes-Benz 300 SL y avances revolucionarios en seguridad, confort y tecnología.
+
+                Hoy, Mercedes-Benz sigue siendo una referencia global en la industria, combinando tradición con innovación para ofrecer vehículos de alta calidad y eficiencia.
+
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6eU3HL7MW_O5OzN8mpKacOQGkAe_8kuWsA&s" alt="Imagen de computadora">
+        </aside>
+
+        <footer>
+            <h2>Mercedes-Benz © Derechos Reservados.</h2>
+            <a href="https://wa.me/+18299101134" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40px">
+        </a>
+        </footer>
+    </div>
+    <script>
+    let index = 0;
+
+    function moverSlide(direccion) {
+        const slider = document.querySelector(".slider-container");
+        const totalSlides = slider.children.length;
+        
+        index += direccion;
+
+        if (index < 0) {
+            index = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            index = 0;
+        }
+
+        slider.style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+
+</body>
+</html>
